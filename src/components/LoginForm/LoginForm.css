@@ -1,0 +1,33 @@
+/* Custom CSS */
+
+form[name="loginForm"] {
+  width: 450px;
+  padding: 10px;
+}
+
+label {
+  min-width: 180px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ input[type="submit"] {
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: none!important;
+} 
+
+.marginTopBottom{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.form-control{
+  box-shadow: none!important;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}

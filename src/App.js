@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
+import LoginForm from "./components/LoginForm/LoginForm";
+import EmployeeList from "./components/EmployeeList/EmployeeList";
+import Dashboard from "./components/Dashboard/Dashboard";
+
+import { Route, Link } from "react-router-dom";
+
+//Navbar
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className="navbar navbar-expand-sm bg-light">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link" to="/loginForm">Login</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/dashboard">Dashboard</Link>
+          </li>
+        </ul>
+      </nav>
+      <Route exact path="/LoginForm" component={LoginForm} />
+      <Route path="/employeeList" component={EmployeeList} />
+      <Route path="/dashboard" component={Dashboard} />
+    </>
   );
 }
 

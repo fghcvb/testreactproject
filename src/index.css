@@ -1,3 +1,5 @@
+/* Global CSS */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+thead {color:black;}
+tbody {color:blue;}
+table, th, td {
+ border: 1px solid black;
+}
+
+td, th{
+ padding: 5px;
+}
+
+.marginTop{
+  margin-top:55px;
 }
